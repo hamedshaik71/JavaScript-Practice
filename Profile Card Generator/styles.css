@@ -1,0 +1,90 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif; /* Added font for better typography */
+}
+
+/* Center the generate button in the viewport */
+.generateDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Style for the generate button */
+.generateBtn {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1); 
+    padding: 20px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease; 
+}
+
+.generateBtn:hover {
+    background-color: darkgreen; 
+}
+
+/* Style for the profile card */
+.profile-card {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto; /* Center the card and add margin */
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.profile-card:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Profile image styling */
+.profile-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Style the name and description */
+.profile-card h3 {
+    margin: 10px 0;
+    font-size: 1.25em; /* Increase font size for better readability */
+    font-weight: bold;
+}
+
+.profile-card p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* Ensure responsiveness for smaller screens */
+@media (max-width: 480px) {
+    .generateBtn {
+        font-size: 16px;
+        padding: 15px 25px;
+    }
+
+    .profile-card {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .profile-card h3 {
+        font-size: 1em;
+    }
+
+    .profile-card p {
+        font-size: 0.9em;
+    }
+}
